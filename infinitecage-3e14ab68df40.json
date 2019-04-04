@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "infinitecage",
+  "private_key_id": "3e14ab68df407e945c7a0d78b0d807fb1855913f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDgzLIRwSdqbKwq\nukp9Be7eyCEAc2/Tbf2yXUDAp/rsr84IiXBip4uVsqICKAl+kLu9mfQfynv698rV\nsncE+H+cNY00KQ2Tc1lk2hAx39cjVfNMUdDBm2MpWMIuDpUMh0hN17guCg26Y7OS\nq8zlamJs3hYMM3ga13+W71M3sxIVMN43VvbzeGSWIija05pwrU3aoCdqt6Sf/lPm\nJt2ttpGm4qtxxB5T8Cnaqwss0eADgsAMlB9wSh+eR+8luRTePP7S7KRnih59j42R\nyWpReACeiAZRQaNvPDCVMxejJnzzY98LOVW+wmCVNyz2/o5+5l9BF0P7tDHADrnf\nRjpCJUJxAgMBAAECggEAA0f2BIOn/fSq/jJwVQBg1Z2ZgihJnzi6Uf/QAAb6v9Vr\nSot/AIxKmn7cMkT44vLO9yMnyLE6ArK+E+++kohVjHywf+y7sakmkabS7ek0z+OO\nC991Y8p50igeDI5EYDdv8GWXF9QLvM4o2ERrrC7h4f/LZCSknj7J3PSq2Udi06Aa\nvsS1rMTAoNujaj5Phb+CkE7pqbzHfa8S/ezZuPyxKS8Qy9tyohDNvv+jAVoNmWRP\nQdxG0WnQkEALX8Hwrs/UBjKgFoC4ZkotSFZwHiOmdV/+qzUIV3QSJdaoKPKjMUda\ny9Sq38nmAn86Vwpg7xxuguvFIPmyKuJGuflqtFlpRQKBgQD1hrpXEM24znsNauQ+\n0nHU++99y9clQ3XiWbIR2QziSpRwiUBrt75YJO4I5wiBRwKgF+ogKdXSlERzLqM9\nCzAjOawZEcW2y9MrAU1dAc5RMaRUtw/ktLvhk8I6EZPhCi4+Z97njErscl7mLA82\naPqXsFxZ7gCHbkuLlxp7Q3uHPwKBgQDqY58nByhhEUw4Khkrm6L11z9YWwyJDO0g\n2C1ng5wOT+eGsnKtHsTTk6WxzyccsRssugAFbKUTIAjCSPv5OacGaXhufHnLAsqf\nzW372aRZ5Z3U2GS3BASX4kUfsGdskD2bRANxBNo7cSqKhQppM55yfAwrmd3DcKic\nkPyNIU36TwKBgQCNrEgppRCP6tUmUN+TQGtesmDm/ZAPeHW1Pnx5v/ynNtGgfhIm\nFchHpEeV63oE3qytJB98n6c580PsEqUuvB3ytXyQmqizablXv1CcskYSo8pm95q8\nJW2kJFaWmz3xRKaaa+U7RsCU3wnTVukQRFMU5DblzWeQvhvpWC93oODOkQKBgQCs\nC23h7t4Tyeehfj01hisqutFzYHmmC4fvSN6jEba1xq8Sbt+/9UrSZpkEGCMEa3ef\n7/NeB+5vSF9FhN73g/r2uOo+Zz3a5vSmMdseNxXtKp8cga4DrH5Woi7M4OY5iPK/\nij/gcIhjg2CPhrIqoEoYjLc+NdXSxFnvenj2etDK/wKBgAvAfF9IQ6SnKHsS4Ha7\n7na3yF774A47t1kxF93kqc0v6uoy9lDJ8XFmCJQxUttmO2m/QQqx+ZXVqUmVuRaT\nwAo4Ny7udnIVM0Cj0XMlFuXiPfEt3mlloygAZbuaz0HIDF89W4ecp15YSrezPcWU\nU3B+odOnB7ApoMtal9ZsWBeh\n-----END PRIVATE KEY-----\n",
+  "client_email": "roompublisher@infinitecage.iam.gserviceaccount.com",
+  "client_id": "109672528478360668907",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/roompublisher%40infinitecage.iam.gserviceaccount.com"
+}
