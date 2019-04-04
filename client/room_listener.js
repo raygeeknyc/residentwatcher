@@ -29,7 +29,7 @@ async function listSubscriptions() {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   // Lists all subscriptions in the current project
   const [subscriptions] = await pubsub.getSubscriptions();
@@ -45,9 +45,12 @@ async function listTopicSubscriptions(topicName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
-  const topicName = 'room-movement';
+  /**
+   * TODO(developer): Uncomment the following line to run the sample.
+   */
+  // const topicName = 'my-topic';
 
   // Lists all subscriptions for the topic
   const [subscriptions] = await pubsub.topic(topicName).getSubscriptions();
@@ -63,10 +66,13 @@ async function createSubscription(topicName, subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
-  const topicName = 'room-renderer';
-  const subscriptionName = 'room-renderer';
+  /**
+   * TODO(developer): Uncomment the following lines to run the sample.
+   */
+  // const topicName = 'my-topic';
+  // const subscriptionName = 'my-sub';
 
   // Creates a new subscription
   await pubsub.topic(topicName).createSubscription(subscriptionName);
@@ -86,7 +92,7 @@ async function createFlowControlledSubscription(
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following lines to run the sample.
@@ -127,7 +133,7 @@ async function createPushSubscription(topicName, subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following lines to run the sample.
@@ -155,7 +161,7 @@ async function modifyPushConfig(topicName, subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following line to run the sample.
@@ -184,7 +190,7 @@ async function deleteSubscription(subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following line to run the sample.
@@ -203,7 +209,7 @@ async function getSubscription(subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following line to run the sample.
@@ -225,13 +231,13 @@ function listenForMessages(subscriptionName, timeout) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following lines to run the sample.
    */
-  //const subscriptionName = 'room-renderer';
-  const timeout = 60;
+  // const subscriptionName = 'my-sub';
+  // const timeout = 60;
 
   // References an existing subscription
   const subscription = pubsub.subscription(subscriptionName);
@@ -361,7 +367,7 @@ async function listenForOrderedMessages(subscriptionName, timeout) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   // References an existing subscription, e.g. "my-subscription"
   const subscription = pubsub.subscription(subscriptionName);
@@ -420,7 +426,7 @@ async function listenForErrors(subscriptionName, timeout) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following lines to run the sample.
@@ -463,7 +469,7 @@ async function getSubscriptionPolicy(subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following line to run the sample.
@@ -483,7 +489,7 @@ async function setSubscriptionPolicy(subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following line to run the sample.
@@ -521,7 +527,7 @@ async function testSubscriptionPermissions(subscriptionName) {
   const {PubSub} = require('@google-cloud/pubsub');
 
   // Creates a client
-  const pubsub = new PubSub('infinitecage');
+  const pubsub = new PubSub();
 
   /**
    * TODO(developer): Uncomment the following line to run the sample.
@@ -615,7 +621,7 @@ const cli = require(`yargs`)
       timeout: {
         alias: 't',
         type: 'number',
-        default: 10,
+        default: 180,
       },
     },
     opts => listenForMessages(opts.subscriptionName, opts.timeout)
@@ -633,7 +639,7 @@ const cli = require(`yargs`)
       timeout: {
         alias: 't',
         type: 'number',
-        default: 10,
+        default: 180,
       },
     },
     opts => listenForErrors(opts.subscriptionName, opts.timeout)
